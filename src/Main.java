@@ -26,28 +26,71 @@ public class Main {
             System.out.println("Child");
         } else if (age >= 13 && age <= 19) {
             System.out.println("Teen");
-        } else if (age >= 20 && age <= 59){
+        } else if (age >= 20 && age <= 59) {
             System.out.println("Adult");
-        } else if(age >= 60) {
+        } else if (age >= 60) {
             System.out.println("Senior Citizen");
         } else {
             System.out.println("Invalid age");
         }
         int grade = 83;
         // grade mapping algorithm : 90–100: A, 80–89: B, 70–79: C, 60–69: D, Below 60: F
-        if (grade >=0 && grade <=60){
+        if (grade >= 0 && grade <= 60) {
             System.out.println("F");
-        } else if (grade >=60 && grade <= 69){
+        } else if (grade >= 60 && grade <= 69) {
             System.out.println("D");
-        } else if (grade >=70 && grade <=79){
+        } else if (grade >= 70 && grade <= 79) {
             System.out.println("C");
-        }else if (grade >=80 && grade<=89){
+        } else if (grade >= 80 && grade <= 89) {
             System.out.println("B");
-        }else if (grade >=90 && grade<=100){
+        } else if (grade >= 90 && grade <= 100) {
             System.out.println("A");
         } else {
             System.out.println("Invalid grade");
         }
+        int temperature = 70;
+        if (temperature <= 0) {
+            System.out.println("Freezing");
+        } else if (temperature >0 && temperature <=20){
+            System.out.println("Cold");
+        } else if (temperature >= 21 && temperature <=35){
+            System.out.println("Moderate");
+        } else {
+            System.out.println("Hot");
+        }
+        //Array
+
+        //int[] arr = new int[10];
+
+        //int[] arr = {1,2,3,4,5};
+        int i = 200;
+        while (i > 100){
+            if (i%2==0){
+                System.out.println(i+ " Even ");
+            } else {
+                System.out.println(i+ " odd ");
+            }
+                i--; // i = i + 2
+        }
+int A = 100;
+        int B = 0;
+        while(A <200){
+            B=A+B;
+            A++;
+        }
+System.out.println("Total value " + B);
+
+        int C = 99;
+        int D = 0;
+        while(C<200){
+            if(C%5==0){
+                D=C+D;
+            }
+            C++;
+        }
+        System.out.println(" Addition of 5 " + D);
+
+
     }
 }
         // 0-12 child 13 - 19 teen 20-59 adult 60+ senior citizen
